@@ -209,7 +209,7 @@ task ExtractAnAcAfFromVCF {
 
         echo $(date +%s)
 
-        bcftools norm -m- ~{local_input_vcf} > normalized_input.vcf
+        bcftools norm -m- -N ~{local_input_vcf} > normalized_input.vcf
 
         echo $(date +%s)
         du
