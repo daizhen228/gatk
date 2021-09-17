@@ -237,7 +237,7 @@ task ExtractAnAcAfFromVCF {
     # Runtime settings:
     runtime {
         docker: "us.gcr.io/broad-dsde-methods/variantstore:ah_var_store_20210916"
-        memory: "12 GB"
+        memory: "20 GB"
         preemptible: 1
         cpu: "2"
         disks: "local-disk 1000 SSD"
