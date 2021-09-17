@@ -239,7 +239,7 @@ task ExtractAnAcAfFromVCF {
         docker: "us.gcr.io/broad-dsde-methods/variantstore:ah_var_store_20210916"
         memory: "12 GB"
         preemptible: 3
-        cpu: "2"
+        cpu: "10"
         disks: "local-disk 500 SSD"
     }
     # ------------------------------------------------
